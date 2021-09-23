@@ -1,6 +1,6 @@
 name: CronRunner
 main: io.github.patrick.cronrunner.CronRunner
-version: 1.0-SNAPSHOT
+version: 1.0
 description: Simple cron command runner for Bukkit 1.17+
 author: PatrickKR
 website: https://github.com/patrick-choe/cron-runner
