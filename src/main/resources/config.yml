@@ -1,0 +1,31 @@
+# Configuration Guide
+#
+# debug: (optional) whether to print debug information (when reading & executing), defaults to false
+# cron-type: (optional) cron type to use. Available types: UNIX (default), CRON4J, QUARTZ, SPRING
+# tasks: (required) list of tasks to execute
+#  * On each task section
+#  - cron: (required) list of cron expressions, or a single cron expression
+#  - run-once: (optional) whether to run cron once after startup/reload, defaults to false
+#  - command: (required) list of minecraft commands, or a single minecraft command (do not use slash in front of command)
+#
+#
+# Example Configuration
+#
+#debug: true
+#cron-type: UNIX
+#tasks:
+#  - cron: "* * * * *"
+#    command:
+#      - "say Hello World!"
+#      - "say Goodbye World!"
+#  - cron:
+#    - "0 12 * * *"
+#    - "0 18 * * *"
+#    command: "stop"
+#  - cron: "0 12 * * *"
+#    run-once: true
+#    command: "say one time event"
+
+debug: false
+cron-type: UNIX
+tasks:

@@ -1,0 +1,10 @@
+name: CronRunner
+main: io.github.patrick.cronrunner.CronRunner
+version: 1.0-SNAPSHOT
+description: Simple cron command runner for Bukkit 1.17+
+author: PatrickKR
+website: https://github.com/patrick-choe/cron-runner
+api-version: 1.17
+libraries:
+  - org.jetbrains.kotlin:kotlin-stdlib:1.5.31
+  - com.cronutils:cron-utils:9.1.5
